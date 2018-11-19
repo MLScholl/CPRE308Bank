@@ -1,0 +1,31 @@
+Compiles: 10pts
+
+Can be read and understood easily (if bugs exists): 10pts
+
+Summary: 10pts
+
+Performs the requirements: 75pts
+	3.0 - 5pts - Initialization (like creating correct # of threads and so on)
+
+	3.1 - 5pts - Launching the program: 
+		appserver <# of worker threads> <# of accounts> <output file>
+
+	3.2 - 5pts - Immediate request response:
+		ID <request ID>
+
+	3.2.1 - 15pts - Balance Check correctly handled and in the correct format:
+		CHECK <account id> --> <requestID> BAL <balance>
+	
+	3.2.2 - 20pts - Transaction correctly handled and in the correct format:
+		TRANS <acct1> <amount1> ...  -->  <requestID> OK or <requestID> ISF
+
+	3.2.3 - 5pts - END
+
+	3.4 - 5pts - Timestamps done correctly (from getting in the queue to finish)
+
+	6.1 - 10pts - Coarse grained code works
+
+	6.2 - 5pts - Average included for each program
+
+6.3: 15pts - 3pts - Per correctly answered question 
+
